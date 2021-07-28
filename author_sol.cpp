@@ -9,7 +9,7 @@ int main() {
 	cin >> s;
 	vector<vector<int>> a(10);
 	vector<bool> visited((int) s.size(), false);
-	// create a graph wherein digits from (0 to 9) contain values from the string (numerical)
+	// create a graph wherein the characters (digits) from the string contain their current indices
 	for (int i = 1; i < (int) s.size(); i++) {
 		a[s[i] - '0'].emplace_back(i);
 	}
